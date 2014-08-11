@@ -1,0 +1,23 @@
+ImageJ is a public domain Java image processing program used internally within the client. (Full source can be found on the NIH pages here: http://imagej.nih.gov/ij/ Developer resources can be found here: http://imagej.nih.gov/ij/developer/ )
+
+Currently, the installation of ImageJ being used by the client does not possess the same level of functionality as is present in some Canon software that is being used to control a camera as it is taking images.  Through [topcoder] challenges Omicron is seeking to replicate and improve upon the functionality of the software directly through
+
+ImageJ for a more complete level of control over the image-taking process.
+
+The main task of this challenge is to implement an ImageJ plugin that will cover the following workflow/requirements:
+
+1. The plugin can be used to attach the camera to ImageJ that will interact with the standard Canon firmware
+2. The plugin will create a live video stream of the current image being viewed on the camera into the software. So that the user of the Image can view the real-time images on the camera.
+3. The user (who is viewing the image) can control focus and control of the lens.
+4. The user (who is viewing the image) can set the parameters for the image to be taken – including ISO, Shutter Speed, Aperture and White balance.
+a. These parameters will be dependent on the current camera mode e.g. Manual setting on the camera
+5. Then, the user can trigger the taking of the pictures.
+6. The following time-lapse photography of the image taking will be configured via a config file:
+   a.setting the number of frames,
+   b.how far apart they should be.
+7. After the user triggered the picture taking, the application will automatically save the image to the PC (the folder to save images will be configured in the configuration file).
+8. During the above step, the main GUI of this plugin will show the general status indicator:
+   a. Battery remaining I would imagine should be percentage based
+   b. Lens status should be appropriate to the values available.
+
+9. The values contained in configuration file can be modified from within the software we produce.
