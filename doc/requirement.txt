@@ -21,3 +21,5 @@ a. These parameters will be dependent on the current camera mode e.g. Manual set
    b. Lens status should be appropriate to the values available.
 
 9. The values contained in configuration file can be modified from within the software we produce.
+
+Test Edit.
